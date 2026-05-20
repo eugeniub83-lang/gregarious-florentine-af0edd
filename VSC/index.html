@@ -326,11 +326,13 @@
                 </div>
                 <div id="contact">
                     <h3 style="margin-bottom: 30px; border-bottom: 3px solid var(--brand-red); display: inline-block; padding-bottom: 5px;">Request a Quote</h3>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="tel" placeholder="Phone Number" required>
-                        <textarea rows="5" placeholder="Project Details" required></textarea>
+                    <form class="contact-form" action="https://formsubmit.co/info.strongcompliance@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New enquiry from StrongCo website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <textarea name="message" rows="5" placeholder="Project Details" required></textarea>
                         <button type="submit" class="btn-submit">SUBMIT ENQUIRY</button>
                     </form>
                 </div>
@@ -341,8 +343,10 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <img src="images/strongco-logo.webp" class="footer-logo" alt="Strongco Fire Safety">
-                <p>StrongCo Fire Safety — Professional Fire Door Surveys & Maintenance</p>
+                <img src="images/strongco-logo.webp" class="footer-logo" alt="StrongCo Ltd">
+                <p><strong>StrongCo Ltd</strong></p>
+                <p>Company number: 12920025</p>
+                <p>Fire door surveys, maintenance and compliance support across London, Kent and Essex.</p>
             </div>
             <div class="footer-col">
                 <h4>Sitemap</h4>
@@ -361,8 +365,8 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 Strongco Ltd. All rights reserved. Registered in England & Wales.<br>
-            <small>Fire Safety Services | London, Kent, Essex & Surrounding Counties</small>
+            &copy; 2020 StrongCo Ltd | Registered in England & Wales | Company number: 12920025<br>
+            <small>Professional fire-door surveys, maintenance and compliance services in London, Kent, Essex & surrounding counties.</small>
         </div>
     </footer>
 
