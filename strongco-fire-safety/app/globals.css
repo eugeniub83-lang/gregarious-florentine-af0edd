@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-strongco-grey font-sans antialiased;
+  min-height: 100vh;
+}
+
+* {
+  @apply box-border;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  @apply bg-strongco-red text-white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+input,
+textarea,
+select {
+  @apply w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 shadow-sm transition duration-200 ease-in-out focus:border-strongco-red focus:outline-none focus:ring-2 focus:ring-strongco-red/20;
+}
+
+button {
+  @apply inline-flex items-center justify-center rounded-xl bg-strongco-red px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-[#a10e24] focus:outline-none focus:ring-2 focus:ring-strongco-red/30;
+}
+
+.fieldset {
+  @apply border border-slate-200 bg-white/90 p-6 rounded-3xl shadow-soft;
+}
+
+.label {
+  @apply mb-3 block text-sm font-semibold text-strongco-grey;
+}
+
+.section-heading {
+  @apply mb-5 text-2xl font-bold text-strongco-grey;
+}
+
+.step-pill {
+  @apply rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-xs uppercase tracking-[0.28em] text-slate-600;
+}
+
+.step-indicator {
+  @apply flex items-center gap-3 mb-8;
+}
+
+.alert {
+  @apply rounded-2xl border p-4 text-sm;
+}
+
+.alert-success {
+  @apply border-strongco-red/40 bg-emerald-50 text-emerald-800;
+}
+
+.alert-error {
+  @apply border-rose-300 bg-rose-50 text-rose-800;
+}
